@@ -179,9 +179,12 @@ section + section {
 
 .theme-card img {
   width: 100%;
-  aspect-ratio: 1.35;
+  height: clamp(156px, 16vw, 188px);
   object-fit: contain;
-  background: var(--soft);
+  object-position: center;
+  padding: 10px;
+  background: #fff;
+  border: 1px solid rgba(217, 222, 231, 0.75);
   border-radius: 6px;
 }
 
@@ -273,6 +276,10 @@ section + section {
 
   .theme-grid {
     grid-template-columns: 1fr;
+  }
+
+  .theme-card img {
+    height: 220px;
   }
 
   .hero h2 {
