@@ -11,83 +11,132 @@
     <main>
       <aside class="profile">
         <img
+          class="portrait"
           src="https://ecos-appdev-production.s3.amazonaws.com/science_site/s3fs-public/styles/f_story_image/public/2025-10/Snipaste_2025-10-23_15-24-22.png?h=47f5d173&itok=rWeZMMbU"
           alt="Mingsheng Tian"
           onerror="this.onerror=null;this.src='assets/img/profile-placeholder.svg';"
         >
         <h1>Mingsheng Tian</h1>
-        <p class="title">Postdoctoral Scholar</p>
+        <p class="title">Postdoctoral Scholar / Eberly Research Scholar</p>
         <p>Pennsylvania State University<br>Atomic, Molecular, and Optical Physics</p>
         <p><a href="mailto:mmt6147@psu.edu">mmt6147@psu.edu</a></p>
         <nav aria-label="Academic links">
-          <a href="https://scholar.google.com/citations?user=RYFxHLgAAAAJ&hl=en&oi=ao">Google Scholar</a>
+          <a href="https://science.psu.edu/physics/people/mmt6147">Penn State</a>
           <a href="https://orcid.org/0009-0007-2486-5892">ORCID</a>
+          <a href="https://scholar.google.com/scholar?q=%22Mingsheng+Tian%22+%22Pennsylvania+State+University%22">Google Scholar</a>
           <a href="https://arxiv.org/search/?query=Mingsheng+Tian&searchtype=author">arXiv</a>
+          <a href="https://www.overleaf.com/read/pksdcjwdtxbt#db7bcb">CV</a>
         </nav>
       </aside>
 
       <section class="content">
-        <section>
-          <h2>About</h2>
+        <section class="hero">
+          <p class="kicker">Quantum science across platforms, correlations, and topology</p>
+          <h2>Building controllable quantum systems to probe many-body physics, entanglement, and non-Hermitian topology.</h2>
           <p>
-I am a postdoctoral scholar in AMO physics at Pennsylvania State University, 
-            working at the interface of quantum metrology, quantum many-body physics, and quantum information science. 
-            My research explores how quantum coherence and entanglement can be created, controlled,  
-            and exploited across both continuous-variable optical systems and discrete programmable quantum platforms, 
-            combining theoretical analysis, numerical simulation, and machine-learning methods for quantum science.
+            I am a postdoctoral scholar and Eberly Research Scholar in Atomic,
+            Molecular, and Optical Physics at Pennsylvania State University,
+            working with Bryce Gadway. My research connects programmable
+            quantum simulation, quantum metrology, multipartite entanglement,
+            and topological/non-Hermitian physics.
           </p>
         </section>
 
-        <section>
-          <h2>Research Interests</h2>
-          <ul>
-            <li>Quantum simulation and quantum information science</li>
-            <li>Quantum metrology and entanglement</li>
-            <li>Quantum optics and atomic physics</li>
-            <li>AI for quantum science and technologies</li>
+        <section id="research">
+          <div class="section-heading">
+            <h2>Research Themes</h2>
+            <p>Three threads, one playground: engineer quantum systems, read out correlations, and use topology as a control knob.</p>
+          </div>
+          <div class="theme-grid">
+            <a class="theme-card" href="#simulation">
+              <img src="assets/img/theme-simulation.svg" alt="Hand-drawn Rydberg lattice illustration">
+              <span>01</span>
+              <h3>Quantum Simulation & Many-Body Physics</h3>
+              <p>Rydberg arrays, frustrated lattices, engineered interactions, dissipative preparation.</p>
+            </a>
+            <a class="theme-card" href="#metrology">
+              <img src="assets/img/theme-metrology.svg" alt="Hand-drawn quantum metrology and entanglement illustration">
+              <span>02</span>
+              <h3>Quantum Metrology & Entanglement</h3>
+              <p>Continuous-variable systems, non-Gaussian resources, steering, quantum Fisher information.</p>
+            </a>
+            <a class="theme-card" href="#topology">
+              <img src="assets/img/theme-topology.svg" alt="Hand-drawn topology and non-Hermitian physics illustration">
+              <span>03</span>
+              <h3>Topology & Non-Hermitian Physics</h3>
+              <p>Weyl points, Fermi arcs, spectral winding, skin modes, nonreciprocal amplification.</p>
+            </a>
+          </div>
+        </section>
+
+        <section class="theme-detail" id="simulation">
+          <h2>Quantum Simulation & Many-Body Physics</h2>
+          <p>
+            I design routes to engineer and prepare correlated quantum matter in
+            programmable platforms, with a current focus on dipolar Rydberg
+            arrays, frustrated magnetism, topological pumping, and driven or
+            dissipative control.
+          </p>
+          <ul class="work-list">
+            <li><a href="https://journals.aps.org/prl/abstract/10.1103/yxbv-1dkk">Engineering Frustrated Rydberg Spin Models by Graphical Floquet Modulation</a>, <em>Physical Review Letters</em> 135, 253001 (2025).</li>
+            <li><a href="https://arxiv.org/abs/2604.18542">Dissipative Preparation of Correlated Quantum States in Dipolar Rydberg Arrays</a>, arXiv:2604.18542 (2026).</li>
+            <li><a href="https://arxiv.org/abs/2512.12364">Interaction-assisted topological pumping in few- and many-atom Rydberg arrays</a>, arXiv:2512.12364 (2025).</li>
+            <li><a href="https://www.nature.com/articles/s41534-025-01158-y">Exceptional-point-induced nonequilibrium entanglement dynamics in bosonic networks</a>, <em>npj Quantum Information</em> 12, 14 (2026).</li>
           </ul>
         </section>
 
-        <section>
-          <h2>Education</h2>
-          <p><strong>Peking University</strong>, Ph.D. in Physics, 2019-2024</p>
-          <p><strong>Huazhong University of Science and Technology</strong>, Bachelor in Physics, 2015-2019</p>
+        <section class="theme-detail" id="metrology">
+          <h2>Quantum Metrology & Entanglement</h2>
+          <p>
+            I develop experimentally relevant ways to certify, classify, and use
+            multipartite quantum correlations, especially in continuous-variable
+            and non-Gaussian systems where full tomography is expensive.
+          </p>
+          <ul class="work-list">
+            <li><a href="https://journals.aps.org/prl/abstract/10.1103/21t1-dqn6">Characterizing the Multipartite Entanglement Structure of Non-Gaussian Continuous-Variable States with a Single Evolution Operator</a>, <em>Physical Review Letters</em> 135, 140201 (2025).</li>
+            <li><a href="https://arxiv.org/abs/2409.07909">Classifying Multipartite Continuous Variable Entanglement Structures through Data-Augmented Neural Networks</a>, accepted by <em>Nature Machine Intelligence</em>.</li>
+            <li><a href="https://journals.aps.org/prapplied/abstract/10.1103/PhysRevApplied.18.024065">Characterizing Multipartite Non-Gaussian Entanglement for a Three-Mode Spontaneous Parametric Down-Conversion Process</a>, <em>Physical Review Applied</em> 18, 024065 (2022).</li>
+            <li><a href="https://iopscience.iop.org/article/10.1088/2058-9565/ad124b">Certification of Non-Gaussian Einstein-Podolsky-Rosen Steering</a>, <em>Quantum Science and Technology</em> 9, 015021 (2024).</li>
+            <li><a href="https://journals.aps.org/prl/abstract/10.1103/3jlc-lb5c">Noncommutativity as a Universal Characterization for Enhanced Quantum Metrology</a>, <em>Physical Review Letters</em> 136, 010201 (2026).</li>
+          </ul>
+        </section>
+
+        <section class="theme-detail" id="topology">
+          <h2>Topology & Non-Hermitian Physics</h2>
+          <p>
+            I am interested in how nonreciprocity, gain/loss, feedback, and
+            spectral topology reshape transport, localization, and boundary
+            phenomena in photonic, mechanical, and bosonic platforms.
+          </p>
+          <ul class="work-list">
+            <li><a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.132.126602">Manipulation of Weyl Points in Reciprocal and Nonreciprocal Mechanical Lattices</a>, <em>Physical Review Letters</em> 132, 126602 (2024).</li>
+            <li><a href="https://opg.optica.org/prj/fulltext.cfm?uri=prj-11-5-852&id=530250">Nonreciprocal Amplification Transition in a Topological Photonic Network</a>, <em>Photonics Research</em> 11, 852 (2023).</li>
+            <li><a href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.107.205154">Non-Bloch Topological Phases in a Hermitian System</a>, <em>Physical Review B</em> 107, 205154 (2023).</li>
+            <li><a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.110.053507">Manipulating Spectral Windings and Skin Modes through Nonconservative Couplings</a>, <em>Physical Review A</em> 110, 053507 (2024).</li>
+          </ul>
         </section>
 
         <section>
           <h2>Selected Publications</h2>
           <ol class="publications">
-            <li>
-              <strong>Mingsheng Tian</strong>, Rhine Samajdar, and Bryce Gadway.
-              <a href="https://journals.aps.org/prl/abstract/10.1103/yxbv-1dkk">Engineering frustrated Rydberg spin models by graphical Floquet modulation</a>,
-              <em>Physical Review Letters</em> 135, 253001 (2025).
-            </li>
-            <li>
-              <strong>Mingsheng Tian*</strong>, Xiaoting Gao*, Boxuan Jing, Fengxiao Sun, Yu Xiang, and Qiongyi He.
-              <a href="https://journals.aps.org/prl/abstract/10.1103/21t1-dqn6">Characterizing the multipartite entanglement structure of non-Gaussian continuous-variable states with a single evolution operator</a>,
-              <em>Physical Review Letters</em> 135, 140201 (2025).
-            </li>
-            <li>
-              <strong>Mingsheng Tian</strong>, Ivan Velkovsky, Tao Chen, Fengxiao Sun, Qiongyi He, and Bryce Gadway.
-              <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.132.126602">Manipulation of Weyl points in reciprocal and nonreciprocal mechanical lattices</a>,
-              <em>Physical Review Letters</em> 132, 126602 (2024).
-            </li>
-            <li>
-              Chenghe Yu*, <strong>Mingsheng Tian*</strong>, Ningxin Kong, Matteo Fadel, Xinyao Huang, and Qiongyi He.
-              <a href="https://www.nature.com/articles/s41534-025-01158-y">Exceptional-point-induced nonequilibrium entanglement dynamics in bosonic networks</a>,
-              <em>npj Quantum Information</em> 12, 14 (2026).
-            </li>
-            <li>
-              Ningxin Kong, Haojie Wang, <strong>Mingsheng Tian</strong>, Yilun Xu, Geng Chen, Yu Xiang, and Qiongyi He.
-              <a href="https://journals.aps.org/prl/abstract/10.1103/3jlc-lb5c">Noncommutativity as a universal characterization for enhanced quantum metrology</a>,
-              <em>Physical Review Letters</em> 136, 010201 (2026).
-            </li>
-            <li>
-              Xiaoting Gao*, <strong>Mingsheng Tian*</strong>, Fengxiao Sun, Yadong Wu, Yu Xiang, and Qiongyi He.
-              <a href="https://arxiv.org/abs/2409.07909">Classifying multipartite continuous variable entanglement structures through data-augmented neural networks</a>,
-              arXiv:2409.07909.
-            </li>
+            <li><strong>Mingsheng Tian</strong>, Rhine Samajdar, and Bryce Gadway. <a href="https://journals.aps.org/prl/abstract/10.1103/yxbv-1dkk">Engineering Frustrated Rydberg Spin Models by Graphical Floquet Modulation</a>, <em>Physical Review Letters</em> 135, 253001 (2025).</li>
+            <li><strong>Mingsheng Tian*</strong>, Xiaoting Gao*, Boxuan Jing, Fengxiao Sun, Matteo Fadel, Manuel Gessner, and Qiongyi He. <a href="https://journals.aps.org/prl/abstract/10.1103/21t1-dqn6">Characterizing the Multipartite Entanglement Structure of Non-Gaussian Continuous-Variable States with a Single Evolution Operator</a>, <em>Physical Review Letters</em> 135, 140201 (2025).</li>
+            <li><strong>Mingsheng Tian</strong>, Ivan Velkovsky, Tao Chen, Fengxiao Sun, Qiongyi He, and Bryce Gadway. <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.132.126602">Manipulation of Weyl Points in Reciprocal and Nonreciprocal Mechanical Lattices</a>, <em>Physical Review Letters</em> 132, 126602 (2024).</li>
+            <li>Xiaoting Gao*, <strong>Mingsheng Tian*</strong>, Fengxiao Sun, Yadong Wu, Yu Xiang, and Qiongyi He. <a href="https://arxiv.org/abs/2409.07909">Classifying Multipartite Continuous Variable Entanglement Structures through Data-Augmented Neural Networks</a>, accepted by <em>Nature Machine Intelligence</em>.</li>
+            <li><strong>Mingsheng Tian</strong>, Zhen Bi, Thomas Iadecola, and Bryce Gadway. <a href="https://arxiv.org/abs/2604.18542">Dissipative Preparation of Correlated Quantum States in Dipolar Rydberg Arrays</a>, arXiv:2604.18542 (2026).</li>
+            <li>Ningxin Kong, Haojie Wang, <strong>Mingsheng Tian</strong>, Yilun Xu, Geng Chen, Yu Xiang, and Qiongyi He. <a href="https://journals.aps.org/prl/abstract/10.1103/3jlc-lb5c">Noncommutativity as a Universal Characterization for Enhanced Quantum Metrology</a>, <em>Physical Review Letters</em> 136, 010201 (2026).</li>
+            <li>Chenghe Yu*, <strong>Mingsheng Tian*</strong>, Ningxin Kong, Matteo Fadel, Xinyao Huang, and Qiongyi He. <a href="https://www.nature.com/articles/s41534-025-01158-y">Exceptional-Point-Induced Nonequilibrium Entanglement Dynamics in Bosonic Networks</a>, <em>npj Quantum Information</em> 12, 14 (2026).</li>
+            <li><strong>Mingsheng Tian</strong>, Yu Xiang, Feng-Xiao Sun, Matteo Fadel, and Qiongyi He. <a href="https://journals.aps.org/prapplied/abstract/10.1103/PhysRevApplied.18.024065">Characterizing Multipartite Non-Gaussian Entanglement for a Three-Mode Spontaneous Parametric Down-Conversion Process</a>, <em>Physical Review Applied</em> 18, 024065 (2022).</li>
           </ol>
+        </section>
+
+        <section>
+          <h2>Academic Path</h2>
+          <div class="timeline">
+            <p><span>2024-now</span> Postdoctoral Scholar / Eberly Research Scholar, Pennsylvania State University</p>
+            <p><span>2019-2024</span> Ph.D. in Physics, Peking University</p>
+            <p><span>2015-2019</span> Bachelor in Physics, Huazhong University of Science and Technology</p>
+          </div>
         </section>
 
         <section>
@@ -95,8 +144,14 @@ I am a postdoctoral scholar in AMO physics at Pennsylvania State University,
           <ul>
             <li>Rising Researcher Award from Penn State's Institute for Computational and Data Sciences, 2025</li>
             <li>Outstanding Graduate of Peking University, 2024</li>
+            <li>Scientific Research Award of Peking University, 2022 and 2023</li>
             <li>Outstanding Graduate of Huazhong University, 2019</li>
           </ul>
+        </section>
+
+        <section>
+          <h2>Beyond Research</h2>
+          <p class="hobbies">Volleyball · Basketball · Tennis · Hiking</p>
         </section>
       </section>
     </main>
