@@ -252,6 +252,16 @@ main.publications-page {
   color: var(--muted);
 }
 
+.publication-categories {
+  margin: -18px 0 28px;
+}
+
+.publications-page section > h2 {
+  margin-bottom: 18px;
+  color: var(--blue-dark);
+  font-size: 1.35rem;
+}
+
 .year-group {
   display: grid;
   grid-template-columns: 90px minmax(0, 1fr);
@@ -260,7 +270,7 @@ main.publications-page {
   border-top: 1px solid var(--line);
 }
 
-.year-group h2 {
+.year-group h3 {
   color: var(--blue-dark);
   font-family: Georgia, "Times New Roman", serif;
   font-size: 1.25rem;
