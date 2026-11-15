@@ -1,174 +1,197 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-lang="en" data-title-en="Publications · Mingsheng Tian" data-title-zh="论文列表 · Mingsheng Tian">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Publications by Mingsheng Tian">
-    <title>Publications | Mingsheng Tian</title>
-    <link rel="stylesheet" href="assets/css/style.css?v=20260909-2">
+    <title>Publications · Mingsheng Tian</title>
+    <meta name="description" content="Publications by Mingsheng Tian.">
+    <script>
+      (function () {
+        var l = null;
+        try { l = new URLSearchParams(location.search).get("lang"); } catch (e) {}
+        if (l === "zh" || l === "en") { try { localStorage.setItem("site-lang", l); } catch (e) {} }
+        else { try { l = localStorage.getItem("site-lang"); } catch (e) {} }
+        if (l !== "zh" && l !== "en") { l = /^zh/i.test(navigator.language || "") ? "zh" : "en"; }
+        document.documentElement.setAttribute("data-lang", l);
+        document.documentElement.lang = l === "zh" ? "zh-CN" : "en";
+      })();
+    </script>
+    <link rel="stylesheet" href="assets/css/style.css?v=20261115">
   </head>
   <body>
     <header class="site-header">
-      <nav class="top-nav" aria-label="Main navigation">
-        <a class="home-link" href="index.html#home">Homepage</a>
+      <nav class="top-nav" aria-label="Main">
+        <a class="brand" href="index.html">Mingsheng Tian</a>
+        <div class="nav-links">
+          <a href="index.html#about"><span class="en">About</span><span class="zh">关于我</span></a>
+          <a href="index.html#research"><span class="en">Research</span><span class="zh">研究方向</span></a>
+          <a class="nav-optional" href="index.html#education"><span class="en">Education</span><span class="zh">教育经历</span></a>
+          <a href="publications.html" aria-current="page"><span class="en">Publications</span><span class="zh">论文列表</span></a>
+        </div>
+        <button class="lang-toggle" type="button" data-lang-toggle>中文</button>
       </nav>
     </header>
 
-    <main class="publications-page">
-      <section>
-        <h1>Publications</h1>
-        <p class="page-intro"> * Equal contribution.</p>
+    <main class="page page--single">
+      <div class="page-head">
+        <h1><span class="en">Publications</span><span class="zh">论文列表</span></h1>
+        <p>
+          <span class="en"><sup>*</sup> Equal contribution. Citation metrics are on <a href="https://scholar.google.com/citations?user=RYFxHLgAAAAJ&amp;hl=en">Google Scholar</a>.</span>
+          <span class="zh"><sup>*</sup> 共同第一作者。引用数据可以在 <a href="https://scholar.google.com/citations?user=RYFxHLgAAAAJ&amp;hl=en">Google Scholar</a> 查看。</span>
+        </p>
+      </div>
 
-        <nav class="publication-categories" aria-label="Publication categories">
-          <a href="#preprints">Preprints</a> ·
-          <a href="#journal-articles">Journal Articles</a>
-        </nav>
-
-        <section id="preprints" class="section-anchor">
-          <h2>Preprints</h2>
-          <ul class="publication-list" role="list">
-            <li class="publication-item">
-              <h3 class="publication-title">Asymptotic Entanglement across Dynamical Regimes of a Dissipative Bosonic Dimer</h3>
-              <p class="publication-authors">Chenghe Yu, <strong>Mingsheng Tian</strong>, Feng-Xiao Sun, and Qiongyi He</p>
-              <p class="publication-venue"><a href="https://arxiv.org/abs/2608.29672">arXiv:2608.29672</a></p>
+      <!-- Preprints -->
+      <section id="preprints" class="pub-section">
+        <h2><span class="en">Preprints</span><span class="zh">预印本</span></h2>
+        <div class="year-group">
+          <h3>2026</h3>
+          <ul class="pub-list">
+            <li class="pub">
+              <a class="pub-title" href="https://arxiv.org/abs/2608.29672">Asymptotic Entanglement across Dynamical Regimes of a Dissipative Bosonic Dimer</a>
+              <p class="pub-authors">C. Yu, <b>M. Tian</b>, F.-X. Sun, and Q. He</p>
+              <p class="pub-venue"><span class="journal">arXiv</span> <span class="num">2608.29672 (2026)</span></p>
             </li>
           </ul>
-        </section>
+        </div>
+      </section>
 
-        <section id="journal-articles" class="section-anchor">
-          <h2>Journal Articles</h2>
-          <div class="year-group">
-            <h3>2026</h3>
-            <ul class="publication-list" role="list">
-              <li class="publication-item">
-                <h4 class="publication-title">Dissipative Preparation of Correlated Quantum States in Dipolar Rydberg Arrays</h4>
-                <p class="publication-authors"><strong>Mingsheng Tian</strong>, Zhen Bi, Thomas Iadecola, and Bryce Gadway</p>
-                <p class="publication-venue"><a href="https://journals.aps.org/pra/accepted/10.1103/v1xw-78qv"><em>Physical Review A</em>, accepted 20 October 2026</a> · <a href="https://arxiv.org/abs/2604.18542">arXiv</a></p>
-              </li>
-              <li class="publication-item">
-                <h4 class="publication-title">Classifying Multipartite Continuous-Variable Entanglement Structures through Data-Augmented Neural Networks</h4>
-                <p class="publication-authors">Xiaoting Gao*, <strong>Mingsheng Tian*</strong>, Fengxiao Sun, Yadong Wu, Yu Xiang, and Qiongyi He</p>
-                <p class="publication-venue"><a href="https://www.nature.com/articles/s42256-026-01284-y"><em>Nature Machine Intelligence</em> 8, 1302–1311 (2026)</a></p>
-              </li>
-              <li class="publication-item">
-                <h4 class="publication-title">Exceptional-Point-Induced Nonequilibrium Entanglement Dynamics in Bosonic Networks</h4>
-                <p class="publication-authors">Chenghe Yu*, <strong>Mingsheng Tian*</strong>, Ningxin Kong, Matteo Fadel, Xinyao Huang, and Qiongyi He</p>
-                <p class="publication-venue"><a href="https://www.nature.com/articles/s41534-025-01158-y"><em>npj Quantum Information</em> 12, 14 (2026)</a></p>
-              </li>
-              <li class="publication-item">
-                <h4 class="publication-title">Interaction-Assisted Topological Pumping in Few- and Many-Atom Rydberg Arrays</h4>
-                <p class="publication-authors">Chenxi Huang, Tao Chen, Qian Liang, Matthew A. Krebs, Ethan Springhorn, Ruiyu Li, <strong>Mingsheng Tian</strong>, Kaden R. A. Hazzard, Jacob P. Covey, and Bryce Gadway</p>
-                <p class="publication-venue"><a href="https://journals.aps.org/prx/accepted/10.1103/bf85-ydvh"><em>Physical Review X</em>, 16, 031075 (2026)</a></p>
-              </li>
-              <li class="publication-item">
-                <h4 class="publication-title">Noncommutativity as a Universal Characterization for Enhanced Quantum Metrology</h4>
-                <p class="publication-authors">Ningxin Kong, Haojie Wang, <strong>Mingsheng Tian</strong>, Yilun Xu, Geng Chen, Yu Xiang, and Qiongyi He</p>
-                <p class="publication-venue"><a href="https://journals.aps.org/prl/abstract/10.1103/3jlc-lb5c"><em>Physical Review Letters</em> 136, 010201 (2026)</a></p>
-              </li>
-              <li class="publication-item">
-                <h4 class="publication-title">Metal-Insulator Coexistence and Gap-Crossing Domain-Wall Modes in an Aubry-André Model with Nonlocal Hopping</h4>
-                <p class="publication-authors">Xiarui Zhan*, <strong>Mingsheng Tian*</strong>, Qiongyi He, Kaiye Shi, and Wei Zhang</p>
-                <p class="publication-venue"><a href="https://journals.aps.org/pra/abstract/10.1103/kcw2-7v4j"><em>Physical Review A</em> 114, 033308 (2026)</a></p>
-              </li>
-            </ul>
-          </div>
+      <!-- Journal articles -->
+      <section id="journal-articles" class="pub-section">
+        <h2><span class="en">Journal Articles</span><span class="zh">期刊论文</span></h2>
 
-          <div class="year-group">
-            <h3>2025</h3>
-            <ul class="publication-list" role="list">
-              <li class="publication-item">
-                <h4 class="publication-title">Engineering Frustrated Rydberg Spin Models by Graphical Floquet Modulation</h4>
-                <p class="publication-authors"><strong>Mingsheng Tian</strong>, Rhine Samajdar, and Bryce Gadway</p>
-                <p class="publication-venue"><a href="https://journals.aps.org/prl/abstract/10.1103/yxbv-1dkk"><em>Physical Review Letters</em> 135, 253001 (2025)</a></p>
-              </li>
-              <li class="publication-item">
-                <h4 class="publication-title">Characterizing the Multipartite Entanglement Structure of Non-Gaussian Continuous-Variable States with a Single Evolution Operator</h4>
-                <p class="publication-authors"><strong>Mingsheng Tian*</strong>, Xiaoting Gao*, Boxuan Jing, Fengxiao Sun, Matteo Fadel, Manuel Gessner, and Qiongyi He</p>
-                <p class="publication-venue"><a href="https://journals.aps.org/prl/abstract/10.1103/21t1-dqn6"><em>Physical Review Letters</em> 135, 140201 (2025)</a></p>
-              </li>
-            </ul>
-          </div>
+        <div class="year-group">
+          <h3>2026</h3>
+          <ul class="pub-list">
+            <li class="pub">
+              <a class="pub-title" href="https://journals.aps.org/pra/accepted/10.1103/v1xw-78qv">Dissipative Preparation of Correlated Quantum States in Dipolar Rydberg Arrays</a>
+              <p class="pub-authors"><b>M. Tian</b>, Z. Bi, T. Iadecola, and B. Gadway</p>
+              <p class="pub-venue"><span class="journal">Physical Review A</span> <span class="num">accepted (2026)</span><span class="pub-extra"><a href="https://arxiv.org/abs/2604.18542">arXiv</a></span></p>
+            </li>
+            <li class="pub">
+              <a class="pub-title" href="https://www.nature.com/articles/s42256-026-01284-y">Classifying Multipartite Continuous-Variable Entanglement Structures through Data-Augmented Neural Networks</a>
+              <p class="pub-authors">X. Gao<sup>*</sup>, <b>M. Tian</b><sup>*</sup>, F.-X. Sun, Y.-D. Wu, Y. Xiang, and Q. He</p>
+              <p class="pub-venue"><span class="journal">Nature Machine Intelligence</span> <span class="num"><b>8</b>, 1302 (2026)</span><span class="pub-extra"><a href="https://arxiv.org/abs/2409.07909">arXiv</a></span></p>
+            </li>
+            <li class="pub">
+              <a class="pub-title" href="https://www.nature.com/articles/s41534-025-01158-y">Exceptional-Point-Induced Nonequilibrium Entanglement Dynamics in Bosonic Networks</a>
+              <p class="pub-authors">C. Yu<sup>*</sup>, <b>M. Tian</b><sup>*</sup>, N. Kong, M. Fadel, X. Huang, and Q. He</p>
+              <p class="pub-venue"><span class="journal">npj Quantum Information</span> <span class="num"><b>12</b>, 14 (2026)</span><span class="pub-extra"><a href="https://arxiv.org/abs/2502.04639">arXiv</a></span></p>
+            </li>
+            <li class="pub">
+              <a class="pub-title" href="https://doi.org/10.1103/bf85-ydvh">Interaction-Assisted Topological Pumping in Few- and Many-Atom Rydberg Arrays</a>
+              <p class="pub-authors">C. Huang, T. Chen, Q. Liang, M. A. Krebs, E. Springhorn, R. Li, <b>M. Tian</b>, K. R. A. Hazzard, J. P. Covey, and B. Gadway</p>
+              <p class="pub-venue"><span class="journal">Physical Review X</span> <span class="num"><b>16</b>, 031075 (2026)</span><span class="pub-extra"><a href="https://arxiv.org/abs/2512.12364">arXiv</a></span></p>
+            </li>
+            <li class="pub">
+              <a class="pub-title" href="https://journals.aps.org/prl/abstract/10.1103/3jlc-lb5c">Noncommutativity as a Universal Characterization for Enhanced Quantum Metrology</a>
+              <p class="pub-authors">N. Kong, H. Wang, <b>M. Tian</b>, Y. Xu, G. Chen, Y. Xiang, and Q. He</p>
+              <p class="pub-venue"><span class="journal">Physical Review Letters</span> <span class="num"><b>136</b>, 010201 (2026)</span><span class="pub-extra"><a href="https://arxiv.org/abs/2511.22280">arXiv</a></span></p>
+            </li>
+            <li class="pub">
+              <a class="pub-title" href="https://journals.aps.org/pra/abstract/10.1103/kcw2-7v4j">Metal–Insulator Coexistence and Gap-Crossing Domain-Wall Modes in an Aubry–André Model with Nonlocal Hopping</a>
+              <p class="pub-authors">X. Zhan<sup>*</sup>, <b>M. Tian</b><sup>*</sup>, Q. He, K. Shi, and W. Zhang</p>
+              <p class="pub-venue"><span class="journal">Physical Review A</span> <span class="num"><b>114</b>, 033308 (2026)</span><span class="pub-extra"><a href="https://arxiv.org/abs/2609.07704">arXiv</a></span></p>
+            </li>
+          </ul>
+        </div>
 
-          <div class="year-group">
-            <h3>2024</h3>
-            <ul class="publication-list" role="list">
-              <li class="publication-item">
-                <h4 class="publication-title">Manipulation of Weyl Points in Reciprocal and Nonreciprocal Mechanical Lattices</h4>
-                <p class="publication-authors"><strong>Mingsheng Tian</strong>, Ivan Velkovsky, Tao Chen, Fengxiao Sun, Qiongyi He, and Bryce Gadway</p>
-                <p class="publication-venue"><a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.132.126602"><em>Physical Review Letters</em> 132, 126602 (2024)</a></p>
-              </li>
-              <li class="publication-item">
-                <h4 class="publication-title">Certification of Non-Gaussian Einstein-Podolsky-Rosen Steering</h4>
-                <p class="publication-authors"><strong>Mingsheng Tian*</strong>, Zihang Zou*, Da Zhang, David Barral, Kamel Bencheikh, Qiongyi He, Feng-Xiao Sun, and Yu Xiang</p>
-                <p class="publication-venue"><a href="https://iopscience.iop.org/article/10.1088/2058-9565/ad124b"><em>Quantum Science and Technology</em> 9, 015021 (2024)</a></p>
-              </li>
-              <li class="publication-item">
-                <h4 class="publication-title">Manipulating Spectral Windings and Skin Modes through Nonconservative Couplings</h4>
-                <p class="publication-authors">Ningxin Kong, <strong>Mingsheng Tian</strong>, Chenghe Yu, Yilun Xu, Matteo Fadel, Xinyao Huang, and Qiongyi He</p>
-                <p class="publication-venue"><a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.110.053507"><em>Physical Review A</em> 110, 053507 (2024)</a></p>
-              </li>
-            </ul>
-          </div>
+        <div class="year-group">
+          <h3>2025</h3>
+          <ul class="pub-list">
+            <li class="pub">
+              <a class="pub-title" href="https://journals.aps.org/prl/abstract/10.1103/yxbv-1dkk">Engineering Frustrated Rydberg Spin Models by Graphical Floquet Modulation</a>
+              <p class="pub-authors"><b>M. Tian</b>, R. Samajdar, and B. Gadway</p>
+              <p class="pub-venue"><span class="journal">Physical Review Letters</span> <span class="num"><b>135</b>, 253001 (2025)</span><span class="pub-extra"><a href="https://arxiv.org/abs/2505.01513">arXiv</a></span></p>
+            </li>
+            <li class="pub">
+              <a class="pub-title" href="https://journals.aps.org/prl/abstract/10.1103/21t1-dqn6">Characterizing the Multipartite Entanglement Structure of Non-Gaussian Continuous-Variable States with a Single Evolution Operator</a>
+              <p class="pub-authors"><b>M. Tian</b><sup>*</sup>, X. Gao<sup>*</sup>, B. Jing, F.-X. Sun, M. Fadel, M. Gessner, and Q. He</p>
+              <p class="pub-venue"><span class="journal">Physical Review Letters</span> <span class="num"><b>135</b>, 140201 (2025)</span><span class="pub-extra"><a href="https://arxiv.org/abs/2408.12554">arXiv</a></span></p>
+            </li>
+          </ul>
+        </div>
 
-          <div class="year-group">
-            <h3>2023</h3>
-            <ul class="publication-list" role="list">
-              <li class="publication-item">
-                <h4 class="publication-title">Nonreciprocal Amplification Transition in a Topological Photonic Network</h4>
-                <p class="publication-authors"><strong>Mingsheng Tian*</strong>, Fengxiao Sun*, Kaiye Shi, Haitan Xu, Qiongyi He, and Wei Zhang</p>
-                <p class="publication-venue"><a href="https://opg.optica.org/prj/fulltext.cfm?uri=prj-11-5-852&amp;id=530250"><em>Photonics Research</em> 11, 852 (2023)</a></p>
-              </li>
-              <li class="publication-item">
-                <h4 class="publication-title">Non-Bloch Topological Phases in a Hermitian System</h4>
-                <p class="publication-authors">Kaiye Shi*, <strong>Mingsheng Tian*</strong>, Feng-Xiao Sun, and Wei Zhang</p>
-                <p class="publication-venue"><a href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.107.205154"><em>Physical Review B</em> 107, 205154 (2023)</a></p>
-              </li>
-              <li class="publication-item">
-                <h4 class="publication-title">Characterizing Quantum States of Light Using Ghost Imaging</h4>
-                <p class="publication-authors">Xiaolong Dong, Dongyu Liu, <strong>Mingsheng Tian</strong>, Shuheng Liu, Yi Li, Tianxiao Hu, Qiongyi He, Haitan Xu, and Zheng Li</p>
-                <p class="publication-venue"><a href="https://journals.aps.org/prapplied/abstract/10.1103/PhysRevApplied.20.044001"><em>Physical Review Applied</em> 20, 044001 (2023)</a></p>
-              </li>
-              <li class="publication-item">
-                <h4 class="publication-title">Imaging-Based Quantum Tomography of Orbital-Angular-Momentum-Multiplexed Continuous-Variable Entangled States</h4>
-                <p class="publication-authors">Xiaolong Dong*, Dongyu Liu*, <strong>Mingsheng Tian</strong>, Yi Li, Shuheng Liu, Qiongyi He, Haitan Xu, and Zheng Li</p>
-                <p class="publication-venue"><a href="https://journals.aps.org/prapplied/abstract/10.1103/PhysRevApplied.19.044057"><em>Physical Review Applied</em> 19, 044057 (2023)</a></p>
-              </li>
-              <li class="publication-item">
-                <h4 class="publication-title">Remote Preparation of Optical Cat States Based on Gaussian Entanglement</h4>
-                <p class="publication-authors">Dongmei Han, Fengxiao Sun, Na Wang, Yu Xiang, Meihong Wang, <strong>Mingsheng Tian</strong>, Qiongyi He, and Xiaolong Su</p>
-                <p class="publication-venue"><a href="https://doi.org/10.1002/lpor.202300103"><em>Laser &amp; Photonics Reviews</em> 17, 2300103 (2023)</a> </p>
-              </li>
-            </ul>
-          </div>
+        <div class="year-group">
+          <h3>2024</h3>
+          <ul class="pub-list">
+            <li class="pub">
+              <a class="pub-title" href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.132.126602">Manipulation of Weyl Points in Reciprocal and Nonreciprocal Mechanical Lattices</a>
+              <p class="pub-authors"><b>M. Tian</b>, I. Velkovsky, T. Chen, F.-X. Sun, Q. He, and B. Gadway</p>
+              <p class="pub-venue"><span class="journal">Physical Review Letters</span> <span class="num"><b>132</b>, 126602 (2024)</span><span class="pub-extra"><a href="https://arxiv.org/abs/2308.07853">arXiv</a></span></p>
+            </li>
+            <li class="pub">
+              <a class="pub-title" href="https://iopscience.iop.org/article/10.1088/2058-9565/ad124b">Certification of Non-Gaussian Einstein–Podolsky–Rosen Steering</a>
+              <p class="pub-authors"><b>M. Tian</b><sup>*</sup>, Z. Zou<sup>*</sup>, D. Zhang, D. Barral, K. Bencheikh, Q. He, F.-X. Sun, and Y. Xiang</p>
+              <p class="pub-venue"><span class="journal">Quantum Science and Technology</span> <span class="num"><b>9</b>, 015021 (2024)</span><span class="pub-extra"><a href="https://arxiv.org/abs/2308.13867">arXiv</a></span></p>
+            </li>
+            <li class="pub">
+              <a class="pub-title" href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.110.053507">Manipulating Spectral Windings and Skin Modes through Nonconservative Couplings</a>
+              <p class="pub-authors">N. Kong, <b>M. Tian</b>, C. Yu, Y. Xu, M. Fadel, X. Huang, and Q. He</p>
+              <p class="pub-venue"><span class="journal">Physical Review A</span> <span class="num"><b>110</b>, 053507 (2024)</span><span class="pub-extra"><a href="https://arxiv.org/abs/2406.15005">arXiv</a></span></p>
+            </li>
+          </ul>
+        </div>
 
-          <div class="year-group">
-            <h3>2022</h3>
-            <ul class="publication-list" role="list">
-              <li class="publication-item">
-                <h4 class="publication-title">Characterizing Multipartite Non-Gaussian Entanglement for a Three-Mode Spontaneous Parametric Down-Conversion Process</h4>
-                <p class="publication-authors"><strong>Mingsheng Tian</strong>, Yu Xiang, Feng-Xiao Sun, Matteo Fadel, and Qiongyi He</p>
-                <p class="publication-venue"><a href="https://journals.aps.org/prapplied/abstract/10.1103/PhysRevApplied.18.024065"><em>Physical Review Applied</em> 18, 024065 (2022)</a></p>
-              </li>
-            </ul>
-          </div>
+        <div class="year-group">
+          <h3>2023</h3>
+          <ul class="pub-list">
+            <li class="pub">
+              <a class="pub-title" href="https://opg.optica.org/prj/fulltext.cfm?uri=prj-11-5-852&amp;id=530250">Nonreciprocal Amplification Transition in a Topological Photonic Network</a>
+              <p class="pub-authors"><b>M. Tian</b><sup>*</sup>, F.-X. Sun<sup>*</sup>, K. Shi, H. Xu, Q. He, and W. Zhang</p>
+              <p class="pub-venue"><span class="journal">Photonics Research</span> <span class="num"><b>11</b>, 852 (2023)</span><span class="pub-extra"><a href="https://arxiv.org/abs/2207.06889">arXiv</a></span></p>
+            </li>
+            <li class="pub">
+              <a class="pub-title" href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.107.205154">Non-Bloch Topological Phases in a Hermitian System</a>
+              <p class="pub-authors">K. Shi<sup>*</sup>, <b>M. Tian</b><sup>*</sup>, F.-X. Sun, and W. Zhang</p>
+              <p class="pub-venue"><span class="journal">Physical Review B</span> <span class="num"><b>107</b>, 205154 (2023)</span></p>
+            </li>
+            <li class="pub">
+              <a class="pub-title" href="https://journals.aps.org/prapplied/abstract/10.1103/PhysRevApplied.20.044001">Characterizing Quantum States of Light Using Ghost Imaging</a>
+              <p class="pub-authors">X. Dong, D. Liu, <b>M. Tian</b>, S. Liu, Y. Li, T. Hu, Q. He, H. Xu, and Z. Li</p>
+              <p class="pub-venue"><span class="journal">Physical Review Applied</span> <span class="num"><b>20</b>, 044001 (2023)</span></p>
+            </li>
+            <li class="pub">
+              <a class="pub-title" href="https://journals.aps.org/prapplied/abstract/10.1103/PhysRevApplied.19.044057">Imaging-Based Quantum Tomography of Orbital-Angular-Momentum-Multiplexed Continuous-Variable Entangled States</a>
+              <p class="pub-authors">X. Dong<sup>*</sup>, D. Liu<sup>*</sup>, <b>M. Tian</b>, Y. Li, S. Liu, Q. He, H. Xu, and Z. Li</p>
+              <p class="pub-venue"><span class="journal">Physical Review Applied</span> <span class="num"><b>19</b>, 044057 (2023)</span></p>
+            </li>
+            <li class="pub">
+              <a class="pub-title" href="https://doi.org/10.1002/lpor.202300103">Remote Preparation of Optical Cat States Based on Gaussian Entanglement</a>
+              <p class="pub-authors">D. Han, F.-X. Sun, N. Wang, Y. Xiang, M. Wang, <b>M. Tian</b>, Q. He, and X. Su</p>
+              <p class="pub-venue"><span class="journal">Laser &amp; Photonics Reviews</span> <span class="num"><b>17</b>, 2300103 (2023)</span><span class="pub-extra"><a href="https://arxiv.org/abs/2304.08863">arXiv</a></span></p>
+            </li>
+          </ul>
+        </div>
 
-          <div class="year-group">
-            <h3>2021</h3>
-            <ul class="publication-list" role="list">
-              <li class="publication-item">
-                <h4 class="publication-title">Ghost Imaging with Non-Gaussian Quantum Light</h4>
-                <p class="publication-authors">Dongyu Liu*, <strong>Mingsheng Tian*</strong>, Shuheng Liu, Xiaolong Dong, Jiajie Guo, Qiongyi He, Haitan Xu, and Zheng Li</p>
-                <p class="publication-venue"><a href="https://journals.aps.org/prapplied/abstract/10.1103/PhysRevApplied.16.064037"><em>Physical Review Applied</em> 16, 064037 (2021)</a></p>
-              </li>
-            </ul>
-          </div>
-        </section>
+        <div class="year-group">
+          <h3>2022</h3>
+          <ul class="pub-list">
+            <li class="pub">
+              <a class="pub-title" href="https://journals.aps.org/prapplied/abstract/10.1103/PhysRevApplied.18.024065">Characterizing Multipartite Non-Gaussian Entanglement for a Three-Mode Spontaneous Parametric Down-Conversion Process</a>
+              <p class="pub-authors"><b>M. Tian</b>, Y. Xiang, F.-X. Sun, M. Fadel, and Q. He</p>
+              <p class="pub-venue"><span class="journal">Physical Review Applied</span> <span class="num"><b>18</b>, 024065 (2022)</span><span class="pub-extra"><a href="https://arxiv.org/abs/2207.06638">arXiv</a></span></p>
+            </li>
+          </ul>
+        </div>
 
+        <div class="year-group">
+          <h3>2021</h3>
+          <ul class="pub-list">
+            <li class="pub">
+              <a class="pub-title" href="https://journals.aps.org/prapplied/abstract/10.1103/PhysRevApplied.16.064037">Ghost Imaging with Non-Gaussian Quantum Light</a>
+              <p class="pub-authors">D. Liu<sup>*</sup>, <b>M. Tian</b><sup>*</sup>, S. Liu, X. Dong, J. Guo, Q. He, H. Xu, and Z. Li</p>
+              <p class="pub-venue"><span class="journal">Physical Review Applied</span> <span class="num"><b>16</b>, 064037 (2021)</span><span class="pub-extra"><a href="https://arxiv.org/abs/2106.00443">arXiv</a></span></p>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
 
-    <footer>
+    <footer class="site-footer">
       <p>© 2026 Mingsheng Tian</p>
     </footer>
+
+    <script src="assets/js/site.js?v=20261115"></script>
   </body>
 </html>
